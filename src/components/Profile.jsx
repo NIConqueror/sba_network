@@ -12,8 +12,8 @@ function Profile(){
       <div>
         New post
         </div>
-        <div className='posts'>
-          <div className='item'>
+        <div className={s.posts}>
+          <div className={s.item}>
             post 1
           </div>
         <div className='item'>

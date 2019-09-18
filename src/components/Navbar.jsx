@@ -1,10 +1,17 @@
 import React from 'react';
 import classes from './Navbar.module.css'
 
-let classes ={
- 'nav' : 'Navbar_nav__2dZG',
- 'item' : 'Navbar_item__3Z5_r',
-}
+//let classes ={
+// 'nav' : 'Navbar_nav__2dZG',
+// 'item' : 'Navbar_item__3Z5_r',
+//}
+
+let c1 = "item";
+let c2 = "active";
+//"item active"
+let classes =  c1 + " " + с2;
+let classesNew = '${c1} ${c2}';
+
 
 
 function Navbar(){
@@ -12,7 +19,7 @@ function Navbar(){
     <div className={classes.item}>
       <a> Profile</a>
     </div>
-    <div className={classes.item}>
+    <div className="item active">
       <a>Message</a>
     </div>
     <div className={classes.item}>
