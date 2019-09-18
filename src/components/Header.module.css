@@ -1,8 +1,8 @@
-.nav{
-  grid-area: nav;
-  background-color: burlywood;
+.header{
+    grid-area: h;
+    background-color: green;
 }
 
-.item{
-  color: white;
-}
+.header img{
+    width: 20px;
+}   
