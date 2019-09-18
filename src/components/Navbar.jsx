@@ -1,34 +1,35 @@
 import React from 'react';
-import classes from './Navbar.module.css'
+import s from './Navbar.module.css'
+console.log(s);
 
-//let classes ={
+//let s ={
 // 'nav' : 'Navbar_nav__2dZG',
 // 'item' : 'Navbar_item__3Z5_r',
 //}
 
 let c1 = "item";
-let c2 = "active";
+let c2= 'active';
 //"item active"
 let classes =  c1 + " " + с2;
-let classesNew = '${c1} ${c2}';
+let classesNew = `${s.item} ${c2}`;
 
 
 
 function Navbar(){
-    return  <nav className={classes.nav}>
-    <div className={classes.item}>
+    return  <nav className={s.nav}>
+    <div className={s.item}>
       <a> Profile</a>
     </div>
-    <div className="item active">
+    <div className={`${s.item} ${s.active}`}>
       <a>Message</a>
     </div>
-    <div className={classes.item}>
+    <div className={s.item}>
       <a>News</a>
     </div>
-    <div className={classes.item}>
+    <div className={s.item}>
      <a> Music</a>
     </div>
-    <div className={classes.item}>
+    <div className={s.item}>
      <a> Settings</a>
     </div>
   </nav>
